@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-@Controller(value="/welcome")
-public class WelcomeController {
+@Controller
+public class HelloController {
 	
-	@RequestMapping(value="/")
+	@RequestMapping(value="/hello")
 	public String welcome(ModelMap modelMap) {
 		modelMap.put("msg", "ABCD from MODELMAP!");
 		return "halo";
